@@ -15,8 +15,8 @@ function Header() {
             <h2>Cozy Like Your Home</h2>
             <nav>
                 <ul>
-                    {navs.map(item => (
-                        <Display id={item.id} content={item.title} />
+                    {navs.map((item, index) => (
+                        <Display key={index} id={item.id} content={item.title} />
                     ))}
                 </ul>
             </nav>
