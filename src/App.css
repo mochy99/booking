@@ -6,6 +6,13 @@
   height: 40vmin;
   pointer-events: none;
 }
+nav > ul {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

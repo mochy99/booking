@@ -1,6 +1,7 @@
 import Header from './components/Header.js';
 import Introduction from './components/Introduction.js'
 import './App.css';
+import Schedule from './components/Schedule.js';
 
 function App() {
   const contents = [
@@ -10,10 +11,15 @@ function App() {
     {content : "Số lượt giặt miễn phí: Nam 06 lần, nữ 08 lần. "},
     {content : "Quý khách lưu ý cài đặt thời gian giặt ngắn hơn thời gian còn lại nếu không có thể sẽ không lấy được quần áo ra khỏi máy và ảnh hưởng đến lượt giặt tiếp theo. Quý khách sẽ bị tính thêm 1 lượt giặt/sấy. "}
   ]
+  const schedules = [
+    {date: "Oct 23, 2023", name: "Tester", email: "email.com", location: "kitchen", description: "hello"}
+  ]
   return (
     <>
     <Header />
-    <Introduction title = {"DORM 7"} contents={contents}/>
+    <Introduction title = "DORM 7" contents= {contents}/>
+    <Schedule title="Schedule Kitchen" schedules={schedules} />
+    <Schedule title="Schedule Floor" schedules={schedules} />
     </>
     
   );
